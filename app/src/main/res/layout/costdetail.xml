@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="@color/material_blue_grey_800"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnback2"
+            android:src="@drawable/abc_ic_ab_back_material"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/cost_detail"
+            android:id="@+id/txtcostrequest"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/abc_background_cache_hint_selector_material_light"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="37dp"
+            android:id="@+id/btnside"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/abc_ic_menu_overflow_material"
+            android:layout_weight="0.01" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/cost_detail"
+            android:id="@+id/txtdetail"
+            android:layout_marginStart="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/state1"
+            android:id="@+id/txtstate1"
+            android:layout_below="@+id/txtdetail"
+            android:layout_alignStart="@+id/txtdetail"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/design_textinput_error_color_light"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnchange"
+            android:layout_below="@+id/txtdetail"
+            android:layout_toEndOf="@+id/txtdetail"
+            android:longClickable="false" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
