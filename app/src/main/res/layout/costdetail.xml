@@ -78,6 +78,128 @@
             android:layout_below="@+id/txtdetail"
             android:layout_toEndOf="@+id/txtdetail"
             android:longClickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/where"
+            android:id="@+id/txtwhere"
+            android:layout_marginLeft="27dp"
+            android:layout_below="@+id/txtstate1"
+            android:layout_alignEnd="@+id/txtstate1"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtwhere"
+            android:hint="@string/default_place"
+            android:layout_below="@+id/txtwhere"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/how_much"
+            android:id="@+id/txthowmuch"
+            android:layout_below="@+id/edtwhere"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edthowmuch"
+            android:text="25,000"
+            android:layout_below="@+id/txthowmuch"
+            android:layout_alignStart="@+id/txtwhere"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/when"
+            android:id="@+id/txtwhen"
+            android:layout_below="@+id/edthowmuch"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/edtwhen"
+            android:layout_below="@+id/txtwhen"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere"
+            android:text="2016-07-07"
+            android:selectAllOnFocus="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/memo"
+            android:id="@+id/txtmemo"
+            android:layout_below="@+id/edtwhen"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edttext"
+            android:text="업무협의시 음료대"
+            android:layout_below="@+id/txtmemo"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/account"
+            android:id="@+id/txtaccount"
+            android:layout_below="@+id/edttext"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere" />
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtaccount"
+            android:layout_below="@+id/txtaccount"
+            android:layout_alignStart="@+id/txtaccount"
+            android:text="복리후생비" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="영수증"
+            android:id="@+id/txtreceipt"
+            android:layout_below="@+id/edtaccount"
+            android:layout_alignStart="@+id/edtaccount" />
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgreceipt2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txthowmuch"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+
     </RelativeLayout>
 
 
