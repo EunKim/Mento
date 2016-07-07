@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //info1.setText("ID : " + id.getText());
                // info2.setText("PWD : " + password.getText());
-                Intent intent = new Intent(this, HereActivity.class);
+               // Intent intent = new Intent(this, HereActivity.class);
             }
         });
 
