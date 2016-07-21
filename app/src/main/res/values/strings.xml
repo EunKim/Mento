@@ -13,4 +13,5 @@
     <string name="receipt">영수증</string>
     <string name="cost_detail">상세보기</string>
     <string name="state1">반려</string>
+    <string name="newinfo">회원가입</string>
 </resources>

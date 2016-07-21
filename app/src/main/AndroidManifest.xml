@@ -21,6 +21,7 @@
         <activity android:name=".HereActivity"></activity>
         <activity android:name=".AccountingListActivity"></activity>
         <activity android:name=".CostRequestActivity"></activity>
+        <activity android:name=".NewCustomerActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
