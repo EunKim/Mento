@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/login"
+        android:id="@+id/txtlogin"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="447dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgicon1"
+            android:layout_marginLeft="96dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="62dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtid"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:hint="Username"
+            android:layout_alignBottom="@+id/imgicon1"
+            android:layout_toRightOf="@+id/imgicon1"
+            android:layout_toEndOf="@+id/imgicon1"
+            android:maxLength="50"
+            android:inputType="text"
+            android:clickable="true">
+        <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgcion2"
+            android:src="@android:drawable/ic_menu_help"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/imgicon1"
+            android:layout_alignLeft="@+id/imgicon1"
+            android:layout_alignStart="@+id/imgicon1"
+            android:layout_toLeftOf="@+id/edtid"
+            android:layout_toStartOf="@+id/edtid" />
+
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edtpwd"
+            android:layout_alignTop="@+id/imgcion2"
+            android:layout_alignStart="@+id/edtid"
+            android:password="true"
+            android:hint="Password"
+            android:maxLength="300" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:id="@+id/btnlogin"
+            android:layout_marginTop="73dp"
+            android:background="@color/accent_material_dark"
+            android:layout_below="@+id/imgcion2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textinfo1"
+            android:layout_marginTop="63dp"
+            android:layout_below="@+id/btnlogin"
+            android:layout_alignStart="@+id/edtid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textinfo2"
+            android:layout_below="@+id/textinfo1"
+            android:layout_alignStart="@+id/textinfo1" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

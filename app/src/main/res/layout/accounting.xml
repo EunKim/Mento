@@ -3,18 +3,23 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/cost_management"
-        android:id="@+id/txtcostmanage"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="23dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:textStyle="bold" />
+        layout="@layout/toolbar_layout"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="@string/cost_management"-->
+        <!--android:id="@+id/txtcostmanage"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="23dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="25dp"-->
+        <!--android:textStyle="bold" />-->
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -22,22 +27,22 @@
         android:id="@+id/btnplus"
         android:src="@android:drawable/ic_menu_add"
         android:layout_marginRight="15dp"
-        android:layout_alignTop="@+id/txtcostmanage"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="-15dp" />
+        android:layout_marginTop="2dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/btnplus">
+        android:weightSum="1">
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="449dp"
             android:id="@+id/costmanagementlist"
-            android:layout_gravity="center_horizontal" />
+            android:layout_weight="0.81"
+            android:layout_marginTop="58dp" />
     </LinearLayout>
 
 </RelativeLayout>

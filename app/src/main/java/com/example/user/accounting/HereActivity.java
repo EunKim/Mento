@@ -13,7 +13,7 @@ import android.widget.TextView;
  */
 public class HereActivity extends AppCompatActivity {
 
-    @Override
+   /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result);
@@ -28,5 +28,5 @@ public class HereActivity extends AppCompatActivity {
         info1.setText("ID : " + id);
         info2.setText("PWD : " + password);
 
-    }
+    }*/
 }

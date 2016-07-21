@@ -3,6 +3,11 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_layout"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -90,13 +95,14 @@
             android:layout_alignEnd="@+id/txtstate1"
             android:layout_marginTop="5dp" />
 
-        <EditText
-            android:layout_width="280dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/edtwhere"
-            android:hint="@string/default_place"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="스타벅스 종로점"
+            android:id="@+id/txtinwhere"
+            android:layout_marginTop="3dp"
             android:layout_below="@+id/txtwhere"
-            android:layout_alignLeft="@+id/txtwhere"
             android:layout_alignStart="@+id/txtwhere" />
 
         <TextView
@@ -105,10 +111,9 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/how_much"
             android:id="@+id/txthowmuch"
-            android:layout_below="@+id/edtwhere"
             android:layout_alignLeft="@+id/txtwhere"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txtinwhere" />
 
         <EditText
             android:layout_width="280dp"
