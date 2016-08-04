@@ -14,4 +14,6 @@
     <string name="cost_detail">상세보기</string>
     <string name="state1">반려</string>
     <string name="newinfo">회원가입</string>
+    <string name="common_text_confirm">확인</string>
+    <string name="common_text_error">오류</string>
 </resources>

@@ -22,6 +22,7 @@
         <activity android:name=".AccountingListActivity"></activity>
         <activity android:name=".CostRequestActivity"></activity>
         <activity android:name=".NewCustomerActivity"></activity>
+        <activity android:name=".ListActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 

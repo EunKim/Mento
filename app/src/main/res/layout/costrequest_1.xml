@@ -86,8 +86,8 @@
             android:text="@string/how_much"
             android:id="@+id/txthowmuch"
             android:layout_below="@+id/edtwhere"
-            android:layout_alignLeft="@+id/edtwhere"
-            android:layout_alignStart="@+id/edtwhere"
+            android:layout_alignLeft="@+id/txtwhere"
+            android:layout_alignStart="@+id/txtwhere"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp" />
 
@@ -99,7 +99,7 @@
             android:id="@+id/edthowmuch"
             android:text="0"
             android:layout_below="@+id/txthowmuch"
-            android:layout_alignStart="@+id/txthowmuch"
+            android:layout_alignStart="@+id/txtwhere"
             android:textAlignment="textEnd" />
 
         <TextView
@@ -113,7 +113,19 @@
             android:layout_alignStart="@+id/edthowmuch"
             android:layout_marginTop="5dp" />
 
-        <EditText
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/when"
+            android:id="@+id/edtwhen"
+            android:layout_below="@+id/txtwhen"
+            android:layout_alignLeft="@+id/txtwhen"
+            android:layout_alignStart="@+id/txtwhen"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp" />
+
+        <!--<EditText
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:inputType="date"
@@ -125,6 +137,16 @@
             android:text="2016-07-07"
             android:selectAllOnFocus="false" />
 
+
+        <DatePicker
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:layout_below="@+id/txtwhen"
+            android:layout_alignLeft="@+id/txtwhen"
+            android:layout_alignStart="@+id/txtwhen"
+            android:theme="@android:style/Theme.Holo.Light"/>-->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -133,7 +155,8 @@
             android:id="@+id/txtmemo"
             android:layout_below="@+id/edtwhen"
             android:layout_alignLeft="@+id/edtwhen"
-            android:layout_alignStart="@+id/edtwhen" />
+            android:layout_alignStart="@+id/edtwhen"
+            android:layout_marginTop="5dp"/>
 
         <EditText
             android:layout_width="280dp"
@@ -182,6 +205,8 @@
             android:src="@android:drawable/ic_menu_report_image"
             android:layout_alignLeft="@+id/txtreceipt"
             android:layout_alignStart="@+id/txtreceipt" />
+
+
 
 
     </RelativeLayout>

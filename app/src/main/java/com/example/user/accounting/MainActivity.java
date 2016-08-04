@@ -22,7 +22,8 @@ import java.net.SocketTimeoutException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
-   /* EditText id;
+    /*
+    EditText id;
     EditText password;
     Button login;
     @Override
@@ -54,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }*/
-
 
 
 
@@ -183,9 +183,9 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     if(result.equals("success")){
 
-                        Intent intent = new Intent(MainActivity.this, HereActivity.class);
-                        intent.putExtra("ID",id.getText().toString());
-                        intent.putExtra("PWD",password.getText().toString());
+                        Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                        //intent.putExtra("ID",id.getText().toString());
+                        //intent.putExtra("PWD",password.getText().toString());
                         startActivity(intent);
 
                     }

@@ -110,9 +110,11 @@ public class NewCustomerActivity extends AppCompatActivity {
                 if(insertid.equals("true")&&insertpwd.equals("true")) {
                     new httpTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, "user_signup_get.php?id="+coid+"&pwd="+pwpw, "");
                     Toast.makeText(NewCustomerActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(NewCustomerActivity.this, MainActivity.class);
+                    startActivity(intent);
                 }
                 else if(insertid.equals("false") && insertpwd.equals("true")){
-                    Toast.makeText(NewCustomerActivity.this, "중복확인을 확인하세요", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(NewCustomerActivity.this, "아이디  중복확인을 확인하세요", Toast.LENGTH_SHORT).show();
                 }
                 else if(insertid.equals("true") && insertpwd.equals("flase")){
                     Toast.makeText(NewCustomerActivity.this, "비밀번호를 확인하세요", Toast.LENGTH_SHORT).show();
