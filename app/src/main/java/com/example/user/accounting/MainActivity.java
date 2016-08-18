@@ -22,7 +22,7 @@ import java.net.SocketTimeoutException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
-    /*
+
     EditText id;
     EditText password;
     Button login;
@@ -54,11 +54,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }*/
+    }
 
 
 
-    private Context CONTEXT;
+   /* private Context CONTEXT;
     EditText id;
     EditText password;
     Button btnconfirm;
@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-    }
+    }*/
 
 
 }
